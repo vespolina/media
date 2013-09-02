@@ -1,5 +1,5 @@
 {
-    "name": "symfony-cmf/media-bundle",
+    "name": "symfony-cmf/media",
     "type": "symfony-bundle",
     "description": "Symfony CMF Media Bundle",
     "keywords": ["Symfony CMF", "image", "media"],
@@ -13,27 +13,20 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3",
-        "symfony/framework-bundle": "~2.1"
+        "php": ">=5.3.3"
     },
     "require-dev": {
-        "symfony-cmf/testing": "1.0.*",
-        "jms/serializer-bundle": "0.12.*",
-        "liip/imagine-bundle": "~0.12",
         "mikey179/vfsStream": "~1.2"
     },
     "suggest": {
         "knplabs/gaufrette": "When using the Gaufrette adapter",
-        "phpcr/phpcr-utils": "When using the Gaufrette adapter",
-        "jms/serializer-bundle": "When using the serializer handler",
-        "liip/imagine-bundle": "When using the ImagineBlock"
+        "phpcr/phpcr-utils": "When using the Gaufrette adapter"
     },
     "autoload":{
         "psr-0":{
-            "Symfony\\Cmf\\Bundle\\MediaBundle": ""
+            "lib": ""
         }
     },
-    "target-dir": "Symfony/Cmf/Bundle/MediaBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
