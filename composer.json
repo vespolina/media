@@ -1,7 +1,6 @@
 {
     "name": "symfony-cmf/media",
-    "type": "symfony-bundle",
-    "description": "Symfony CMF Media Bundle",
+    "description": "Symfony CMF Media",
     "keywords": ["Symfony CMF", "image", "media"],
     "homepage": "http://cmf.symfony.com",
     "license": "MIT",
@@ -24,7 +23,7 @@
     },
     "autoload":{
         "psr-0":{
-            "lib": ""
+            "Media": "lib/"
         }
     },
     "extra": {
