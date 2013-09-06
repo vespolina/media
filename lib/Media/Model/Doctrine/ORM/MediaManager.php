@@ -1,16 +1,15 @@
 <?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Media\Model\Doctrine\ORM;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\Common\Util\ClassUtils;
-use Doctrine\ODM\PHPCR\DocumentManager;
 use PHPCR\Util\PathHelper;
 use Media\MediaInterface;
 use Media\MediaManagerInterface;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
-class MediaManager implements MediaManagerInterface
+class MediaManager extends BaseMediaManager
 {
     /**
      * {@inheritdoc}

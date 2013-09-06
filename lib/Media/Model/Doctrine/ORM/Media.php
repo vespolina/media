@@ -1,6 +1,6 @@
-mn<?php
+<?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Media\Model\Doctrine\ORM;
 
 use Media\HierarchyInterface;
 use Media\Entity\Media as BaseMedia;
@@ -10,24 +10,28 @@ class Media extends BaseMedia implements HierarchyInterface
     /**
      * @var object
      */
-    protected $parent;
-
-    /**
-     * @var string
-     */
     protected $createdBy;
 
     /**
-     * @var string
+     * @var object
+     */
+    protected $parent;
+
+    /**
+     * @var object
      */
     protected $updatedBy;
 
     /**
-     * @return string
+     * Getter for createdBy
+     * The createdBy is assigned by the content repository
+     * This is the name of the (jcr) user that created the node
+     *
+     * @return string name of the (jcr) user who created the file
      */
-    public function __toString()
+    public function getCreatedBy()
     {
-        return $this->name ? $this->name : parent::__toString();
+        return $this->createdBy;
     }
 
     /**
@@ -51,18 +55,6 @@ class Media extends BaseMedia implements HierarchyInterface
     }
 
     /**
-     * Getter for createdBy
-     * The createdBy is assigned by the content repository
-     * This is the name of the (jcr) user that created the node
-     *
-     * @return string name of the (jcr) user who created the file
-     */
-    public function getCreatedBy()
-    {
-        return $this->createdBy;
-    }
-
-    /**
      * Getter for updatedBy
      * The createdBy is assigned by the content repository
      * This is the name of the (jcr) user that updated the node
@@ -72,5 +64,13 @@ class Media extends BaseMedia implements HierarchyInterface
     public function getUpdatedBy()
     {
         return $this->updatedBy;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->name;
     }
 }

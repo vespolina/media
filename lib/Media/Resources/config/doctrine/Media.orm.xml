@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="Media\Model\Doctrine\ORM\Media" />
+
+
+    <field name="description" type="string" nullable="true"/>
+    <field name="copyright" type="string" nullable="true"/>
+    <field name="authorName" type="string" nullable="true"/>
+
+    <field name="createdAt" type="datetime" />
+    <field name="updatedAt" type="datetime" />
+
+    <field name="metadata" type="string" nullable="true"/>
+</doctrine-mapping>
