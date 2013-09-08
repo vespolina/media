@@ -13,7 +13,7 @@ use Media\FileSystemInterface;
 class File extends Media implements FileInterface, BinaryInterface
 {
     /**
-     * @var Resource $content
+     * @var string $content
      */
     protected $content;
 
@@ -67,11 +67,11 @@ class File extends Media implements FileInterface, BinaryInterface
     }
 
     /**
-     * Set the content for this file from the given Resource.
+     * Set the content for this file.
      *
-     * @param Resource $content
+     * @param  $content
      */
-    public function setContent(Resource $content)
+    public function setContent($content)
     {
         $this->content = $content;
     }
@@ -81,15 +81,10 @@ class File extends Media implements FileInterface, BinaryInterface
      *
      * Ensures the content object is created
      *
-     * @return Resource
+     * @return string
      */
     public function getContent()
     {
-        if ($this->content === null) {
-            $this->content = new Resource();
-            $this->content->setLastModified(new \DateTime());
-        }
-
         return $this->content;
     }
 
