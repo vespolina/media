@@ -1,11 +1,11 @@
 <?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
 use Doctrine\ODM\PHPCR\Document\Resource;
-use Media\BinaryInterface;
-use Media\FileInterface;
-use Media\FileSystemInterface;
+use Vespolina\Media\BinaryInterface;
+use Vespolina\Media\FileInterface;
+use Vespolina\Media\FileSystemInterface;
 
 /**
  * TODO: create and add cmf:file mixin

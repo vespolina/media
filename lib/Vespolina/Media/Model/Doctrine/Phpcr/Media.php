@@ -1,9 +1,9 @@
 mn<?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
-use Media\HierarchyInterface;
-use Media\Entity\Media as BaseMedia;
+use Vespolina\Media\HierarchyInterface;
+use Vespolina\Media\Entity\Media as BaseMedia;
 
 class Media extends BaseMedia implements HierarchyInterface
 {

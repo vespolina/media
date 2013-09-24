@@ -1,11 +1,11 @@
 <?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Media\DirectoryInterface;
-use Media\HierarchyInterface;
-use Media\Entity\BaseMedia;
+use Vespolina\Media\DirectoryInterface;
+use Vespolina\Media\HierarchyInterface;
+use Vespolina\Media\Entity\BaseMedia;
 
 class Directory extends BaseMedia implements DirectoryInterface
 {

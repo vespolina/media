@@ -1,9 +1,9 @@
 <?php
 
-namespace Media\Entity;
+namespace Vespolina\Media\Entity;
 
-use Media\FileInterface;
-use Media\MediaManagerInterface;
+use Vespolina\Media\FileInterface;
+use Vespolina\Media\MediaManagerInterface;
 
 abstract class MediaManager implements MediaManagerInterface
 {

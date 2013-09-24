@@ -1,8 +1,8 @@
 <?php
 
-namespace Media\Entity;
+namespace Vespolina\Media\Entity;
 
-use Media\MetadataInterface;
+use Vespolina\Media\MetadataInterface;
 
 class Media extends BaseMedia implements MetadataInterface
 {

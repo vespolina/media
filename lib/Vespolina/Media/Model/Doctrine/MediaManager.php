@@ -1,11 +1,11 @@
 <?php
 
-namespace Media\Model\Doctrine;
+namespace Vespolina\Media\Model\Doctrine;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\Common\Util\ClassUtils;
-use Media\MediaInterface;
-use Media\Entity\MediaManager as BaseMediaManager;
+use Vespolina\Media\MediaInterface;
+use Vespolina\Media\Entity\MediaManager as BaseMediaManager;
 
 class MediaManager extends BaseMediaManager
 {

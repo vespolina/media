@@ -1,6 +1,6 @@
 <?php
 
-namespace Media\Adapter\Gaufrette;
+namespace Vespolina\Media\Adapter\Gaufrette;
 
 use PHPCR\Util\PathHelper;
 

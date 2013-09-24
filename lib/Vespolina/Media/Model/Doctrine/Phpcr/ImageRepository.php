@@ -1,10 +1,10 @@
 <?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
 use Doctrine\ODM\PHPCR\DocumentRepository;
 use PHPCR\Query\QueryInterface;
-use Media\Entity\ImageRepositoryInterface;
+use Vespolina\Media\Entity\ImageRepositoryInterface;
 
 class ImageRepository extends DocumentRepository implements ImageRepositoryInterface
 {

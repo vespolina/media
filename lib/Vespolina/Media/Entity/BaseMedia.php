@@ -1,8 +1,8 @@
 <?php
 
-namespace Media\Entity;
+namespace Vespolina\Media\Entity;
 
-use Media\MediaInterface;
+use Vespolina\Media\MediaInterface;
 
 class BaseMedia implements MediaInterface
 {

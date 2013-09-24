@@ -1,13 +1,13 @@
 {
-    "name": "symfony-cmf/media",
-    "description": "Symfony CMF Media",
-    "keywords": ["Symfony CMF", "image", "media"],
-    "homepage": "http://cmf.symfony.com",
+    "name": "vespolina/media",
+    "description": "Vespolina media",
+    "keywords": ["image", "media"],
+    "homepage": "http://vespolina.org",
     "license": "MIT",
     "authors": [
         {
-            "name": "Symfony CMF Community",
-            "homepage": "https://github.com/symfony-cmf/MediaBundle/contributors"
+            "name": "Vespolina community",
+            "homepage": "https://github.com/vespolina/media/contributors"
         }
     ],
     "minimum-stability": "dev",

@@ -1,6 +1,6 @@
 <?php
 
-namespace Media\Entity;
+namespace Vespolina\Media\Entity;
 
 /**
  * Interface for doctrine image repositories.

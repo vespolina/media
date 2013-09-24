@@ -1,15 +1,16 @@
 <?php
 
-namespace Media\Model\Doctrine\ORM;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Doctrine\Common\Util\ClassUtils;
+use Doctrine\ODM\PHPCR\DocumentManager;
 use PHPCR\Util\PathHelper;
-use Media\MediaInterface;
-use Media\MediaManagerInterface;
+use Vespolina\Media\MediaInterface;
+use Vespolina\Media\MediaManagerInterface;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
-class MediaManager extends BaseMediaManager
+class MediaManager implements MediaManagerInterface
 {
     /**
      * {@inheritdoc}

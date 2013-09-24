@@ -1,8 +1,8 @@
 <?php
 
-namespace Media\Model\Doctrine\Phpcr;
+namespace Vespolina\Media\Model\Doctrine\Phpcr;
 
-use Media\ImageInterface;
+use Vespolina\Media\ImageInterface;
 
 /**
  * TODO: create and add cmf:image mixin

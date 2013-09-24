@@ -1,10 +1,10 @@
 <?php
 
-namespace Media\Model\Doctrine\ORM;
+namespace Vespolina\Media\Model\Doctrine\ORM;
 
-use Media\BinaryInterface;
-use Media\FileInterface;
-use Media\FileSystemInterface;
+use Vespolina\Media\BinaryInterface;
+use Vespolina\Media\FileInterface;
+use Vespolina\Media\FileSystemInterface;
 
 /**
  * TODO: create and add cmf:file mixin

@@ -2,10 +2,10 @@
 
 <phpunit
     colors="true"
-    bootstrap="vendor/symfony-cmf/testing/bootstrap/bootstrap.php"
+    bootstrap="/bootstrap.php"
 >
     <testsuites>
-        <testsuite name="Symfony CmfBlockBundle Test Suite">
+        <testsuite name=" Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>
@@ -20,9 +20,4 @@
             </exclude>
         </whitelist>
     </filter>
-
-    <php>
-        <server name="KERNEL_DIR" value="Tests/Resources/app" />
-    </php>
-
 </phpunit>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Media\Adapter\Gaufrette;
+namespace Vespolina\Media\Adapter\Gaufrette;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Gaufrette\Adapter;
@@ -8,12 +8,12 @@ use Gaufrette\Adapter\ChecksumCalculator;
 use Gaufrette\Adapter\ListKeysAware;
 use Gaufrette\Adapter\MetadataSupporter;
 use Gaufrette\Util;
-use Media\DirectoryInterface;
-use Media\FileInterface;
-use Media\HierarchyInterface;
-use Media\MediaInterface;
-use Media\MediaManagerInterface;
-use Media\MetadataInterface;
+use Vespolina\Media\DirectoryInterface;
+use Vespolina\Media\FileInterface;
+use Vespolina\Media\HierarchyInterface;
+use Vespolina\Media\MediaInterface;
+use Vespolina\Media\MediaManagerInterface;
+use Vespolina\Media\MetadataInterface;
 
 /**
  * Cmf doctrine media adapter

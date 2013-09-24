@@ -2,7 +2,7 @@
 
 namespace Media;
 
-use Media\MediaInterface;
+use Vespolina\Media\MediaInterface;
 
 /**
  * Interface containing media helper methods, these are probably persistence
