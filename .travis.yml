@@ -10,3 +10,5 @@ before_script:
 
 script: phpunit --coverage-text
 
+notifications:
+  irc:   "irc.freenode.org#vespolina"
