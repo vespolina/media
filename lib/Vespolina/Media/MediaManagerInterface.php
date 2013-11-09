@@ -1,6 +1,6 @@
 <?php
 
-namespace Media;
+namespace Vespolina\Media;
 
 use Vespolina\Media\MediaInterface;
 

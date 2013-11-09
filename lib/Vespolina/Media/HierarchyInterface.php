@@ -1,6 +1,6 @@
 <?php
 
-namespace Media;
+namespace Vespolina\Media;
 
 /**
  * Interface for file and directory objects.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Media;
+namespace Vespolina\Media;
 
 /**
  * A basic interface for media objects. Be they cloud hosted or local files.

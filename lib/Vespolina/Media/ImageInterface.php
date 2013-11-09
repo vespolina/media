@@ -1,6 +1,6 @@
 <?php
 
-namespace Media;
+namespace Vespolina\Media;
 
 /**
  * Interface for image container objects. This just adds methods to get the
