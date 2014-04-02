@@ -2,115 +2,83 @@
 
 namespace Vespolina\Media\Entity;
 
-use Vespolina\Media\MetadataInterface;
+use Vespolina\Media\MediaInterface;
 
-class Media extends BaseMedia implements MetadataInterface
+class Media implements MediaInterface
 {
     /**
-     * @var string $description
+     * @var string $id
      */
-    protected $description;
+    protected $id;
 
     /**
-     * @var string $copyright
+     * @var string $name
      */
-    protected $copyright;
+    protected $name;
 
     /**
-     * @var string $authorName
+     * @var \DateTime
      */
-    protected $authorName;
+    protected $createdAt;
 
     /**
-     * @var array $metadata
+     * @var \DateTime
      */
-    protected $metadata;
+    protected $updatedAt;
 
     /**
-     * {@inheritDoc}
+     * @param string $id
      */
-    public function setDescription($description)
+    public function setId($id)
     {
-        $this->description = $description;
+        $this->id = $id;
     }
 
     /**
-     * {@inheritDoc}
+     * @return string
      */
-    public function getDescription()
+    public function getId()
     {
-        return $this->description;
+        return $this->id;
     }
 
     /**
-     * {@inheritDoc}
+     * @param string $name
      */
-    public function setCopyright($copyright)
+    public function setName($name)
     {
-        $this->copyright = $copyright;
+        $this->name = $name;
     }
 
     /**
-     * {@inheritDoc}
+     * @return string
      */
-    public function getCopyright()
+    public function getName()
     {
-        return $this->copyright;
+        return $this->name;
     }
 
     /**
-     * {@inheritDoc}
+     * @return \Datetime
      */
-    public function setAuthorName($authorName)
+    public function getCreatedAt()
     {
-        $this->authorName = $authorName;
+        return $this->createdAt;
     }
 
     /**
-     * {@inheritDoc}
+     * @return \Datetime
      */
-    public function getAuthorName()
+    public function getUpdatedAt()
     {
-        return $this->authorName;
+        return $this->updatedAt;
     }
 
     /**
-     * {@inheritDoc}
+     * @return string
      */
-    public function setMetadata(array $metadata)
+    public function __toString()
     {
-        $this->metadata = $metadata;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getMetadata()
-    {
-        return $this->metadata;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getMetadataValue($name, $default = null)
-    {
-        return isset($this->metadata[$name]) ? $this->metadata[$name] : $default;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setMetadataValue($name, $value)
-    {
-        $this->metadata[$name] = $value;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function unsetMetadataValue($name)
-    {
-        unset($this->metadata[$name]);
+        return (string) $this->id;
     }
 }
