@@ -18,6 +18,7 @@ use Vespolina\Media\MediaInterface;
 class Asset implements AssetInterface
 {
     protected $height;
+    protected $id;
     protected $label;
     protected $media;
     protected $mime;
@@ -25,6 +26,16 @@ class Asset implements AssetInterface
     protected $src;
     protected $type;
     protected $width;
+
+    /**
+     * Return the id
+     *
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
      * Set the asset label

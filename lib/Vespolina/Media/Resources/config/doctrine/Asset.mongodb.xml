@@ -4,7 +4,7 @@
                         xsi:schemaLocation="http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping
                         http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping.xsd">
 
-    <document name="Vespolina\Media\EntityAsset" collection="v_assets">
+    <document name="Vespolina\Media\Entity\Asset" collection="v_assets">
         <field name="id" id="true" />
         <field name="height"    fieldName="height"      type="string" />
         <field name="label"     fieldName="label"       type="string" />
