@@ -2,47 +2,32 @@
 
 namespace Vespolina\Media;
 
-/**
- * Interface for objects containing a file.
- *
- * This is to be kept compatible with the SonataMediaBundle MediaInterface to
- * allow integration with sonata.
- */
-interface FileInterface extends HierarchyInterface, MetadataInterface
+interface FileInterface extends MetadataInterface
 {
     /**
      * Returns the content
      *
      * @return string
      */
-    public function getContentAsString();
+    public function getContent();
 
     /**
      * Set the content
      *
      * @param string $content
      *
-     * @return boolean
+     * @return $this
      */
-    public function setContentFromString($content);
+    public function setContent($content);
 
     /**
-     * Copy the content from a file, this allows to optimize copying the data
-     * of a file. It is preferred to use the dedicated content setters if
-     * possible.
+     * Set the extension
      *
-     * @param FileInterface|\SplFileInfo $file
+     * @param string $extension
      *
-     * @throws \InvalidArgumentException if file is no FileInterface|\SplFileInfo
+     * @return $this
      */
-    public function copyContentFromFile($file);
-
-    /**
-     * The mime type of this media element
-     *
-     * @return string
-     */
-    public function getContentType();
+    public function setExtension($extension);
 
     /**
      * Get the default file name extension for files of this format
@@ -52,10 +37,82 @@ interface FileInterface extends HierarchyInterface, MetadataInterface
     public function getExtension();
 
     /**
+     * Set the filesystem name for libraries like Gaufrette
+     *
+     * @param string $filesystem
+     *
+     * @return $this
+     */
+    public function setFilesystem($filesystem);
+
+    /**
+     * Get the filesystem name for libraries like Gaufrette
+     *
+     * @return string
+     */
+    public function getFilesystem();
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     *
+     * @return $this
+     */
+    public function setLabel($label);
+
+    /**
+     * Get label
+     *
+     * @return string
+     */
+    public function getLabel();
+
+    /**
+     * Set key for the filesystem
+     *
+     * @param string $key
+     *
+     * @return $this
+     */
+    public function setKey($key);
+
+    /**
+     * Get key
+     *
+     * @return string
+     */
+    public function getKey();
+
+    /**
+     * The mime type of this media element
+     *
+     * @return string
+     */
+    public function getMimeType();
+
+    /**
+     * Get the mime type of this media element
+     *
+     * @param string $mimeType
+     *
+     * @return $this
+     */
+    public function setMimeType($mimeType);
+
+    /**
+     * Set the size
+     *
+     * @param mixed $size
+     *
+     * @return $this
+     */
+    public function setSize($size);
+
+    /**
      * Get the file size in bytes
      *
      * @return integer
      */
     public function getSize();
-
 }
