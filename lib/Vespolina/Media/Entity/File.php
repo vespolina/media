@@ -12,7 +12,8 @@ class File extends Metadata implements FileInterface
 {
     protected $content;
     protected $extension;
-    protected $filesystem;
+    protected $fileSystem;
+    protected $fileSystemPath;
     protected $key;
     protected $label;
     protected $mimeType;
@@ -55,9 +56,9 @@ class File extends Metadata implements FileInterface
     /**
      * {@inheritdoc}
      */
-    public function setFilesystem($filesystem)
+    public function setFileSystem($fileSystem)
     {
-        $this->filesystem = $filesystem;
+        $this->fileSystem = $fileSystem;
 
         return $this;
     }
@@ -65,9 +66,26 @@ class File extends Metadata implements FileInterface
     /**
      * {@inheritdoc}
      */
-    public function getFilesystem()
+    public function getFileSystem()
     {
-        return $this->filesystem;
+        return $this->fileSystem;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setFilesystemPath($fileSystemPath)
+    {
+        $this->fileSystemPath = $fileSystemPath;
+        return $this;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFilesystemPath()
+    {
+        return $this->fileSystemPath;
     }
 
     /**

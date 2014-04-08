@@ -39,18 +39,32 @@ interface FileInterface extends MetadataInterface
     /**
      * Set the filesystem name for libraries like Gaufrette
      *
-     * @param string $filesystem
+     * @param string $fileSystem
      *
      * @return $this
      */
-    public function setFilesystem($filesystem);
+    public function setFileSystem($fileSystem);
 
     /**
      * Get the filesystem name for libraries like Gaufrette
      *
      * @return string
      */
-    public function getFilesystem();
+    public function getFileSystem();
+
+    /**
+     * Get the path to the file on the file system.
+     *
+     * @return string
+     */
+    public function setFileSystemPath($fileSystemPath);
+
+    /**
+     * Get the path to the file on the file system.
+     *
+     * @return string
+     */
+    public function getFileSystemPath();
 
     /**
      * Set label
