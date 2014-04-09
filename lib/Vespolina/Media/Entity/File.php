@@ -13,7 +13,7 @@ class File extends Metadata implements FileInterface
     protected $content;
     protected $extension;
     protected $fileSystem;
-    protected $fileSystemPath;
+    protected $localPath;
     protected $key;
     protected $label;
     protected $mimeType;
@@ -74,18 +74,19 @@ class File extends Metadata implements FileInterface
     /**
      * {@inheritdoc}
      */
-    public function setFilesystemPath($fileSystemPath)
+    public function setLocalPath($path)
     {
-        $this->fileSystemPath = $fileSystemPath;
+        $this->localPath = $path;
+
         return $this;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getFilesystemPath()
+    public function getLocalPath()
     {
-        return $this->fileSystemPath;
+        return $this->localPath;
     }
 
     /**

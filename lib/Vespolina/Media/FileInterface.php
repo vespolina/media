@@ -57,14 +57,14 @@ interface FileInterface extends MetadataInterface
      *
      * @return string
      */
-    public function setFileSystemPath($fileSystemPath);
+    public function setLocalPath($path);
 
     /**
      * Get the path to the file on the file system.
      *
      * @return string
      */
-    public function getFileSystemPath();
+    public function getLocalPath();
 
     /**
      * Set label
