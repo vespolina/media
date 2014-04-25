@@ -42,7 +42,7 @@ abstract class MediaManager implements MediaManagerInterface
 
     public function writeContent(FileInterface $file, $content)
     {
-        if (is_file($content)) {
+        if (@is_file($content)) {
             $content = file_get_contents($content);
         }
 
